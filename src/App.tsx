@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import { Element } from "react-scroll";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
@@ -12,18 +11,16 @@ import {
 import { Modal, ModalContent, ModalBody, ModalHeader } from "@heroui/modal";
 import { InView } from "react-intersection-observer";
 
-import Logo from "../components/common/logo";
-import Footer from "../components/common/footer";
-import NavBar from "../components/common/navBar";
-import Works from "../components/homepage/works";
-import AllProjects from "../components/projects/allProjects";
+import Logo from "./components/Logo";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+// import AllProjects from "../components/projects/allProjects";
 
-import INFO from "../data/user";
-import SEO from "../data/seo";
+import INFO from "./data/user";
 
-import "./styles/homepage.css";
+import "./app.css";
 
-const Homepage = () => {
+const App = () => {
 	const [active, setActive] = useState({
 		"home": true,
 		"about": false,
@@ -31,18 +28,16 @@ const Homepage = () => {
 		"experience": false,
 	});
 
-	const currentSEO = SEO.find((item) => item.page === "home");
-
 	return (
 		<React.Fragment>
-			<Helmet>
+			{/* <Helmet>
 				<title>{INFO.main.title}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
-			</Helmet>
+			</Helmet> */}
 
 			<div className="page-content">
 				<NavBar active={active} />
@@ -130,7 +125,7 @@ const Homepage = () => {
 							</Element>
 						</InView>
 						
-						<div class="flex w-2/3 mx-auto gap-12 flex-wrap mt-6">
+						<div className="flex w-2/3 mx-auto gap-12 flex-wrap mt-6">
 							{INFO.skills.map((skill, index) => (
 								<img src={skill.icon} class="w-12 h-12" />
 							))}
@@ -154,7 +149,7 @@ const Homepage = () => {
 						>
 							<Element name="projects">
 								<div className="w-full lg:w-[85%] mt-6 lg:mt-0 text-3xl font-bold font-(family-name:--secondary-font) after:content-[''] after:block after:w-14 after:h-2 after:bg-(color:--link-color) after:rounded after:my-4">Portfolio</div>
-								<AllProjects />
+								{/* <AllProjects /> */}
 							</Element>
 						</InView>
 
@@ -193,4 +188,4 @@ const Homepage = () => {
 	);
 };
 
-export default Homepage;
+export default App;

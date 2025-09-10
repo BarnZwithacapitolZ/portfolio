@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { tv } from "tailwind-variants";
-import useWindowSize from "../../hooks/useWindowSize";
+import useWindowSize from "../hooks/useWindowSize";
 
-import INFO from "../../data/user";
+import INFO from "../data/user";
 
 const logo = tv({
 	base: "flex relative top-auto z-[999] rounded-none shadow-none",
