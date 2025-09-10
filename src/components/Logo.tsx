@@ -6,7 +6,7 @@ import useWindowSize from "../hooks/useWindowSize";
 import INFO from "../data/user";
 
 const logo = tv({
-	base: "flex relative top-auto z-[999] rounded-none shadow-none",
+	base: "flex relative top-auto z-[30] rounded-none shadow-none",
 	variants: {
 		stay: {
 			true: "fixed top-[3vh] border-2 border-white rounded-full shadow-[0px_4px_10px_rgba(0,0,0,0.25)] cursor-pointer",
@@ -26,7 +26,7 @@ const Logo = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			let scroll = Math.round(window.pageYOffset, 2);
+			let scroll = Math.round(window.pageYOffset);
 
 			let newLogoSize = LOGOSIZE - (scroll * incrementor) / 10;
 

@@ -8,20 +8,28 @@ import {
 	faInstagram,
 	faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
-import { Modal, ModalContent, ModalBody, ModalHeader } from "@heroui/modal";
+import { Modal, ModalContent, ModalBody, ModalHeader, useDisclosure } from "@heroui/modal";
 import { InView } from "react-intersection-observer";
 
 import Logo from "./components/Logo";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-// import AllProjects from "../components/projects/allProjects";
+import Projects from "./components/projects/Projects";
 
 import INFO from "./data/user";
 
 import "./app.css";
 
+interface ActiveState {
+	home: boolean;
+	about: boolean;
+	projects: boolean;
+	experience: boolean;
+}
+
+
 const App = () => {
-	const [active, setActive] = useState({
+	const [active, setActive] = useState<ActiveState>({
 		"home": true,
 		"about": false,
 		"projects": false,
@@ -44,7 +52,7 @@ const App = () => {
 				<div className="content-wrapper">
 					<InView
 						as="div"
-						onChange={(inView) => setActive({ ...active, "home": inView})}
+						onChange={(inView: boolean) => setActive({ ...active, "home": inView})}
 						threshold={0.2}
 					>
 						<Element name="home" className="flex flex-col md:flex-row justify-start items-center mt-14 md:mt-[100px] mb-6 gap-6 shadow-[0_2px_10px_rgba(0,0,0,0.1)] rounded-3xl p-4 h-auto md:h-34">
@@ -108,7 +116,7 @@ const App = () => {
 					<div className="pt-6">
 						<InView
 							threshold={0.2}
-							onChange={(inView) => setActive({ ...active, "about": inView})}
+							onChange={(inView: boolean) => setActive({ ...active, "about": inView})}
 							as="div"
 						>
 							<Element 
@@ -118,7 +126,7 @@ const App = () => {
 								<div className="flex items-start flex-col">
 									<div className="w-full lg:w-[85%] mt-6 lg:mt-0 text-3xl font-bold font-(family-name:--secondary-font) after:content-[''] after:block after:w-14 after:h-2 after:bg-(color:--link-color) after:rounded after:my-4">About Me</div>
 
-									<div className="text-gl text-(color:--secondary-color) pt-3">
+									<div className="text-base text-(color:--secondary-color) pt-3">
 										{INFO.homepage.description}
 									</div>
 								</div>
@@ -126,8 +134,8 @@ const App = () => {
 						</InView>
 						
 						<div className="flex w-2/3 mx-auto gap-12 flex-wrap mt-6">
-							{INFO.skills.map((skill, index) => (
-								<img src={skill.icon} class="w-12 h-12" />
+							{INFO.skills.map((skill) => (
+								<img src={skill.icon} className="w-12 h-12" />
 							))}
 						</div>
 
@@ -143,44 +151,32 @@ const App = () => {
 
 						<InView
 							threshold={0.2}
-							onChange={(inView) => setActive({ ...active, "projects": inView})}
+							onChange={(inView: boolean) => setActive({ ...active, "projects": inView})}
 							as="div"
 							className="mt-18"
 						>
 							<Element name="projects">
 								<div className="w-full lg:w-[85%] mt-6 lg:mt-0 text-3xl font-bold font-(family-name:--secondary-font) after:content-[''] after:block after:w-14 after:h-2 after:bg-(color:--link-color) after:rounded after:my-4">Portfolio</div>
-								{/* <AllProjects /> */}
+								<Projects />
 							</Element>
 						</InView>
 
-						<InView
+						{/* <InView
 							threshold={0.2}
-							onChange={(inView) => setActive({ ...active, "contact": inView})}
+							onChange={(inView: boolean) => setActive({ ...active, "contact": inView})}
 							as="div"
 							className="mt-18"
 						>
 							<Element name="contact">
 								<div className="w-full lg:w-[85%] mt-6 lg:mt-0 text-3xl font-bold font-(family-name:--secondary-font) after:content-[''] after:block after:w-14 after:h-2 after:bg-(color:--link-color) after:rounded after:my-4">Contact</div>
 							</Element>
-						</InView>
+						</InView> */}
 
 
 
 						<div className="page-footer">
 							<Footer />
 						</div>
-
-						<Modal size="5xl">
-							<ModalContent className="">
-								<ModalHeader>
-									<div className="w-full lg:w-[85%] mt-6 lg:mt-0 text-3xl font-bold font-(family-name:--secondary-font) after:content-[''] after:block after:w-14 after:h-2 after:bg-(color:--link-color) after:rounded after:my-4">Contact Me</div>
-								</ModalHeader>
-
-								<ModalBody>
-									
-								</ModalBody>
-							</ModalContent>
-						</Modal>
 					</div>
 				</div>
 			</div>

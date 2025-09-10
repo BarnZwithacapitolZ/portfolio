@@ -1,11 +1,9 @@
-import { icon } from "@fortawesome/fontawesome-svg-core";
-
 const INFO = {
 	main: {
 		title: "Reactfolio by truethari",
 		name: "Tharindu N.",
 		email: "mail@tharindu.dev",
-		logo: "../crappy.jpg",
+		logo: "/crappy.jpg",
 	},
 
 	socials: {
@@ -39,18 +37,21 @@ const INFO = {
 		{
 			title: "ODITI",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima. fjdskfjhds sdlkf jsdlk fjksld fkd fjkdslf jsdkl fjsdklf jsdlk fjsdklf jsdkl fjklds j",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
 			link: "https://github.com",
+			skills: ["JavaScript", "GraphQL", "Shopify", "Python", "FastAPI"],
+			images: ["/test.png", "/test.png", "/test.png"]
 		},
 		{
 			title: "studio.oditi.com",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
 			link: "https://github.com",
+			skills: ["JavaScript", "TypeScript", "ReactJS", "PostgreSQL", "Python", "Flask"],
+			images: ["/test.png", "/test.png", "/test.png"]
+
 		},
 
 		{
@@ -58,8 +59,10 @@ const INFO = {
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
 			link: "https://github.com",
+			skills: ["PHP", "laravel", "MySQL", "JavaScript", "ReactJS", "Python"],
+			images: ["/test.png", "/test.png", "/test.png"]
+
 		},
 
 		{
@@ -67,8 +70,10 @@ const INFO = {
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
 			link: "https://github.com",
+			skills: ["Python"],
+			images: ["/test.png", "/crappy.jpg", "/test.png"]
+
 		},
 
 		{
@@ -76,66 +81,68 @@ const INFO = {
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
 			link: "https://github.com",
+			skills: ["Python"],
+			images: ["/test.png", "/test.png", "/test.png"]
+
 		},
 	],
 	skills: [
 		{
 			name: "CSS",
-			icon: "../css.svg"
+			icon: "/css.svg"
 		},
 		{
 			name: "HTML",
-			icon: "../html.svg"
+			icon: "/html.svg"
 		},
 		{
 			name: "JavaScript",
-			icon: "../js.svg"
+			icon: "/js.svg"
 		},
 		{
 			name: "TypeScript",
-			icon: "../ts.svg"
+			icon: "/ts.svg"
 		},
 		{
 			name: "ReactJS",
-			icon: "../react.svg"
+			icon: "/react.svg"
 		},
 		{
 			name: "NodeJS",
-			icon: "../node.svg"
+			icon: "/node.svg"
 		},
 		{
 			name: "PHP",
-			icon: "../php.svg"
+			icon: "/php.svg"
 		},
 		{
 			name: "Laravel",
-			icon: "../laravel.svg"
+			icon: "/laravel.svg"
 		},
 		{
 			name: "WordPress",
-			icon: "../wordpress.svg"
+			icon: "/wordpress.svg"
 		},
 		{
 			name: "Shopify",
-			icon: "../shopify.svg"
+			icon: "/shopify.svg"
 		},
 		{
 			name: "Python",
-			icon: "../python.svg"
+			icon: "/python.svg"
 		},
 		{
 			name: "Flask",
-			icon: "../flask.svg"
+			icon: "/flask.svg"
 		},
 		{
 			name: "VS Code",
-			icon: "../visualstudio.svg"
+			icon: "/visualstudio.svg"
 		},
 		{
 			name: "GraphQL",
-			icon: "../graphql.svg"
+			icon: "/graphql.svg"
 		}
 	]
 };
