@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { tv } from "tailwind-variants";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const navItem = tv({
 	base: "hover:text-(color:--link-color) hover:ease-in-out hover:transition-colors hover:duration-300 font-bold text-[80%] cursor-pointer",
@@ -43,6 +45,10 @@ const NavBar = ({ active }: NavBarProps) => {
 
 							<li className={navItem({active: currentActive === "contact" })}>
 								<Link to="contact" smooth duration={500}>Contact</Link>
+							</li>
+
+							<li>
+								<FontAwesomeIcon icon={faMoon} />
 							</li>
 						</ul>
 					</div>

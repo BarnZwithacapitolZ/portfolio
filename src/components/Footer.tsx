@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<div className="flex pt-6 pb-6 mt-10 items-center justify-center bg-(color:--link-color) text-white">
+		<div className="flex pt-6 pb-6 items-center justify-center bg-(color:--link-color) text-white">
 			<small>© 2025 Sam Barnes</small>
 		</div>
 	);

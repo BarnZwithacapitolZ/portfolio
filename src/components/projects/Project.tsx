@@ -1,11 +1,11 @@
-import "./project.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 type Project = {
-    logo: string,
-    title: string,
-    // description: string,
-    linkText: string,
-    link: string
+    logo: string;
+    title: string;
+    images: string[];
+    link: string;
 }
 
 type ProjectProps = {
@@ -15,13 +15,26 @@ type ProjectProps = {
 
 const Project = ({ project, onOpen }: ProjectProps) => {
 	return (
-        <div className="project cursor-pointer" onClick={() => onOpen(project)}>		
-            <div className="project-container">
-                <div className="project-logo">
-                    <img src={project.logo} alt="logo" />
+        <div className="text-start rounded-3xl h-full cursor-pointer hover:bg-(color:--link-color)/50 transition-all ease-in-out duration-[0.3s] shadow-lg shadow-(color:--link-color)/25" onClick={() => onOpen(project)}>		
+            <div className="p-4 h-full flex flex-col justify-between">
+                <div className="flex w-full justify-between">
+                    <div className="size-10 flex items-center justify-center">
+                        <img src={project.logo} alt="logo" />
+                    </div>
+
+                    <div className="">
+                        <a 
+                            className="bg-(color:--link-color) rounded-full p-2 text-white aspect-square flex"
+                            href={project.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={e => e.stopPropagation()}
+                        >
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="!size-4" />
+                        </a>
+                    </div>
                 </div>
-                <div className="project-title">{project.title}</div>
-                {/* <div className="project-description">{description}</div> */}
+                <div className="font-bold font-(family-name:--secondary-font) text-xl py-4">{project.title}</div>
 
                 <img src={project.images[0]} alt="" className="rounded-3xl aspect-3/2 w-full cursor-pointer object-cover" />
             </div>
