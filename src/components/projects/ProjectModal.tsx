@@ -2,7 +2,7 @@ import { Modal, ModalContent, ModalBody, ModalHeader } from "@heroui/modal";
 import React, { useState } from "react";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Markdown from "react-markdown"
+import ReactMarkdown from "react-markdown"
 import rehypeRaw from "rehype-raw";
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
@@ -22,11 +22,9 @@ type ProjectModalProps = {
     project: ProjectProps
 }
 
-type ListRendererProps = {
-    children: React.ReactNode;
-}
+type ListProps = React.ComponentProps<"ul"> & { children?: React.ReactNode };
 
-const ListRenderer = ({ children }: ListRendererProps) => {
+const ListRenderer = ({ children }: ListProps) => {
     return (
         <ul className="list-inside list-disc">{children}</ul>
     )
@@ -89,11 +87,12 @@ const ProjectModal = ({ isOpen, onOpenChange, project }: ProjectModalProps) => {
                         </div>
 
                         <div className="mt-6">
-                            <Markdown
+                            <ReactMarkdown
                               rehypePlugins={[rehypeRaw]}
-                              children={project.description}
                               components={{ ul: ListRenderer }}
-                            />
+                            >
+                                {project.description}
+                            </ReactMarkdown>
                         </div>
                     </div>
                 </ModalBody>
