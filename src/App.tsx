@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faLink, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
@@ -69,7 +69,7 @@ const App = () => {
 
 				<Section name="about" classNames={{
 					wrapper: "bg-(color:--link-color) text-white py-30 text-center",
-					base: "mb-0"
+					base: "!mb-0"
 				}} onChange={setActive}>
 					<div className="md:w-[60%] flex flex-col gap-6">
 						<h1 className="font-bold font-(family-name:--secondary-font) text-3xl md:text-5xl">Hi, I'm Sam!</h1>
@@ -95,11 +95,21 @@ const App = () => {
 
 
 				<Section name="contact" classNames={{
-					wrapper: "bg-(color:--link-color) text-white py-30 text-center mb-0",
-					base: "mb-0"
+					wrapper: "bg-(color:--link-color) text-white pt-30 pb-10 text-center mb-0",
+					base: "!mb-0 gap-10"
 				}} onChange={setActive}>
 					<h1 className="font-bold font-(family-name:--secondary-font) text-5xl">Contact Me</h1>
-					
+
+					<div className="flex gap-4">
+						<a>
+							<FontAwesomeIcon icon={faGithub} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+						</a>
+						<FontAwesomeIcon icon={faInstagram} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+						<FontAwesomeIcon icon={faLinkedin} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+						<FontAwesomeIcon icon={faMailBulk} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+					</div>
+
+					<span className="text-xl">CV available on request!</span>
 				</Section>
 			</div>
 

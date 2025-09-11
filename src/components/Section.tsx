@@ -32,7 +32,7 @@ const Section = ({ name = "", className = "", classNames = {}, onChange, childre
         >
             <Element 
                 name={name}
-                className={twMerge("max-w-[1344px] mx-auto px-[2rem] md:px-[3rem] flex flex-col gap-6 items-center justify-center mb-20 relative text-center", className, classNames.base)}
+                className={twMerge("max-w-[1344px] mx-auto px-[2rem] md:px-[3rem] flex flex-col gap-6 items-center justify-center mb-20 md:mb-30 relative text-center", className, classNames.base)}
                 data-slot="base"
             >
                 {children}
