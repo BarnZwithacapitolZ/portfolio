@@ -4,6 +4,7 @@ import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
+	faGitlab,
 	faInstagram,
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
@@ -57,7 +58,7 @@ const App = () => {
 					<img src={INFO.main.logo} alt="logo" className="rounded-full size-40 mb-6"  />
 
 					<a 
-						href="https://www.linkedin.com/in/sam-barnes-007389/"
+						href={INFO.socials.linkedin}
 						target="_blank"
 						rel="noreferrer"
 						className="border-2 border-(color:--link-color) text-(color:--link-color) rounded-4xl px-6 py-2 inline-block font-bold text-lg"
@@ -72,9 +73,9 @@ const App = () => {
 					base: "!mb-0"
 				}} onChange={setActive}>
 					<div className="md:w-[60%] flex flex-col gap-6">
-						<h1 className="font-bold font-(family-name:--secondary-font) text-3xl md:text-5xl">Hi, I'm Sam!</h1>
+						<h1 className="text-start md:text-center font-bold font-(family-name:--secondary-font) text-3xl md:text-5xl">Hi, I'm Sam!</h1>
 
-						<span className="text-xl mb-20">{INFO.homepage.description}</span>
+						<span className="text-start md:text-center md:text-lg mb-20">{INFO.homepage.description}</span>
 					</div>
 				</Section>
 
@@ -86,10 +87,9 @@ const App = () => {
 					</div>
 				</Section>
 
-				<Section name="projects" onChange={setActive}>
+				<Section name="projects" onChange={setActive} className="items-start md:items-center text-start md:text-center">
 					<h1 className="font-bold font-(family-name:--secondary-font) text-3xl md:text-5xl">My Portfolio</h1>
-					<span className="text-xl mb-10">Projects I have worked on in my professional and personal career.</span>
-
+					<span className=" text-lg mb-10">Projects I have worked on in my professional and personal career.</span>
 					<Projects />
 				</Section>
 
@@ -101,12 +101,25 @@ const App = () => {
 					<h1 className="font-bold font-(family-name:--secondary-font) text-5xl">Contact Me</h1>
 
 					<div className="flex gap-4">
-						<a>
+						<a href={INFO.socials.github} target="_blank" rel="noreferrer">
 							<FontAwesomeIcon icon={faGithub} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
 						</a>
-						<FontAwesomeIcon icon={faInstagram} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
-						<FontAwesomeIcon icon={faLinkedin} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
-						<FontAwesomeIcon icon={faMailBulk} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+
+						<a href={INFO.socials.gitlab} target="_blank" rel="noreferrer">
+							<FontAwesomeIcon icon={faGitlab} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+						</a>
+
+						<a href={INFO.socials.instagram} target="_blank" rel="noreferrer">
+							<FontAwesomeIcon icon={faInstagram} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+						</a>
+						
+						<a href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
+							<FontAwesomeIcon icon={faLinkedin} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+						</a>
+
+						<a href={INFO.socials.email} target="_blank" rel="noreferrer">
+							<FontAwesomeIcon icon={faMailBulk} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+						</a>
 					</div>
 
 					<span className="text-xl">CV available on request!</span>

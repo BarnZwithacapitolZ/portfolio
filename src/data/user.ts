@@ -1,29 +1,28 @@
 import icon from "../assets/crappy.jpg";
-import oditi from "../assets/oditi.png";
-import oditiCollaborators from "../assets/oditi-collaborators.png"
-import oditiProduct from "../assets/oditi-product.png"
-import oditiAR from "../assets/oditi-ar.png";
-import studioOditi from "../assets/studio.oditi.com.png";
-import rotaboard from "../assets/rotaboard.png"
-import rotaboardRating from "../assets/rotaboard-rating.png"
-import rotaboardEmployees from "../assets/rotaboard-employees.png"
-import rotaboardDash from "../assets/rotaboard-dash.png"
+import oditi from "../assets/portfolio/oditi.png";
+import oditiCollaborators from "../assets/portfolio/oditi-collaborators.png"
+import oditiProduct from "../assets/portfolio/oditi-product.png"
+import oditiAR from "../assets/portfolio/oditi-ar.png";
+import studioOditi from "../assets/portfolio/studio.oditi.com.png";
+import rotaboard from "../assets/portfolio/rotaboard.png"
+import rotaboardRating from "../assets/portfolio/rotaboard-rating.png"
+import rotaboardEmployees from "../assets/portfolio/rotaboard-employees.png"
+import rotaboardDash from "../assets/portfolio/rotaboard-dash.png"
 import { css, html, js, ts, react, node, php, laravel, python, flask, graphql, wordpress, shopify, vscode } from "./icons";
 
 const INFO: any = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
+		title: "",
+		name: "Sam Barnes",
+		email: "barnes.samb@gmail.com",
 		logo: icon,
 	},
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		github: "https://github.com/BarnZwithacapitolZ",
+		gitlab: "https://gitlab.com/users/sc18sjb/projects",
+		linkedin: "https://www.linkedin.com/in/sam-barnes-007389/",
+		instagram: "https://instagram.com/sam_in_a_barn",
+		email: "mailto:barnes.samb@gmail.com"
 	},
 
 	homepage: {
