@@ -10,6 +10,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCloud, faMobileScreen, faCode } from "@fortawesome/free-solid-svg-icons";
 import Helmet from "react-helmet"
+import ReactMarkdown from "react-markdown"
+import rehypeRaw from "rehype-raw";
 
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
@@ -73,9 +75,15 @@ const App = () => {
 					base: "!mb-0"
 				}} onChange={setActive}>
 					<div className="md:w-[60%] flex flex-col gap-6">
-						<h1 className="text-start md:text-center font-bold font-(family-name:--secondary-font) text-3xl md:text-5xl">Hi, I'm Sam!</h1>
+						<h1 className="text-start md:text-center font-bold font-(family-name:--secondary-font) text-3xl md:text-5xl">{INFO.homepage.title}</h1>
 
-						<span className="text-start md:text-center md:text-lg mb-20">{INFO.homepage.description}</span>
+						<span className="text-start md:text-center md:text-lg mb-20">
+							<ReactMarkdown
+								rehypePlugins={[rehypeRaw]}
+							>
+								{INFO.homepage.description}
+							</ReactMarkdown>
+						</span>
 					</div>
 				</Section>
 
@@ -89,7 +97,7 @@ const App = () => {
 
 				<Section name="projects" onChange={setActive} className="items-start md:items-center text-start md:text-center">
 					<h1 className="font-bold font-(family-name:--secondary-font) text-3xl md:text-5xl">My Portfolio</h1>
-					<span className=" text-lg mb-10">Projects I have worked on in my professional and personal career.</span>
+					<span className=" text-lg mb-10">A selection of projects I have worked on through my professional and personal career.</span>
 					<Projects />
 				</Section>
 
@@ -122,7 +130,7 @@ const App = () => {
 						</a>
 					</div>
 
-					<span className="text-xl">CV available on request!</span>
+					<span className="text-xl">CV also available upon request!</span>
 				</Section>
 			</div>
 

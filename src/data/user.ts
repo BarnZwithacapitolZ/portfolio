@@ -4,6 +4,12 @@ import oditiCollaborators from "../assets/portfolio/oditi-collaborators.png"
 import oditiProduct from "../assets/portfolio/oditi-product.png"
 import oditiAR from "../assets/portfolio/oditi-ar.png";
 import studioOditi from "../assets/portfolio/studio.oditi.com.png";
+import studioOditiBrief from "../assets/portfolio/studio.oditi.com-brief.png";
+import studioOditiDash from "../assets/portfolio/studio.oditi.com-dash.png";
+import studioOditiForm from "../assets/portfolio/studio.oditi.com-form.png";
+import studioOditiLeaderboard from "../assets/portfolio/studio.oditi.com-leaderboard.png";
+import studioOditiProfile from "../assets/portfolio/studio.oditi.com-profile.png";
+import studioOditiSubmission from "../assets/portfolio/studio.oditi.com-submission.png";
 import rotaboard from "../assets/portfolio/rotaboard.png"
 import rotaboardRating from "../assets/portfolio/rotaboard-rating.png"
 import rotaboardEmployees from "../assets/portfolio/rotaboard-employees.png"
@@ -26,9 +32,16 @@ const INFO: any = {
 	},
 
 	homepage: {
-		title: "Full-stack web developer, and amateur astronaut.",
-		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+		title: "Hi, I'm Sam!",
+		description: `
+I'm a fullstack engineer based in London. I love creative challanges and taking ideas from the notepad to the ipad (online), turning ideas into scalable, user-friendly applications.
+<br>
+<br>
+I specialise in building projects in <strong>React</strong> and <strong>Python</strong> but also have considerable experience in other languages such as PHP with frameworks like Larave. I enjoy working in a fast, agile way, balancing clean, maintainable code with rapid delivery. Whether it's architecting the backend or database, crafting intuitive frontends, or deploying full solutions, I enjoy taking ownership across the entire development cycle.
+<br>
+<br>
+Feel free to take a moment to browse my portfolio and see what i'm about. I'f your interested in working together or just want to talk, feel free to reach out!
+		`,
 	},
 
 	about: {
@@ -76,7 +89,7 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 			logo: "https://studio.oditi.com/static/media/prospect100icon.29fb2fdd8fd24d5a42e6.png",
 			link: "https://studio.oditi.com",
 			skills: ["JavaScript", "TypeScript", "ReactJS", "PostgreSQL", "Python", "Flask"],
-			images: [studioOditi, "/test.png", "/test.png"]
+			images: [studioOditi, studioOditiSubmission, studioOditiBrief, studioOditiDash, studioOditiForm, studioOditiProfile, studioOditiLeaderboard]
 
 		},
 		{
@@ -113,7 +126,7 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 	skills: {
 		frontend: {
 			name: "Frontend Developer",
-			description: "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
+			description: "I like to create beautiful UIs from scratch, and tailor amazing user experiences.",
 			list: [
 				{
 					name: "CSS",
@@ -139,7 +152,7 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 		},
 		backend: {
 			name: "Backend Developer",
-			description: "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
+			description: "I can create advanced APIs to suit the project requirements and integrate with large databases.",
 			list: [
 				{
 					name: "NodeJS",
@@ -169,7 +182,7 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 		},
 		platform: {
 			name: "Platform & Cloud",
-			description: "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
+			description: "I can deploy a site or API so that users around the world can experience it!",
 			list: [
 				{
 					name: "WordPress",
