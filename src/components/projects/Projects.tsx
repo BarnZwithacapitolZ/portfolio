@@ -20,7 +20,7 @@ const Projects = () => {
 
 	return (
 		<>
-			<div className="flex flex-wrap items-stretch -mx-10">
+			<div className="flex flex-wrap items-stretch overflow-hidden">
 				{INFO.projects.map((project: ProjectProps, index: number) => (
 					<div className="overflow-hidden p-2 w-1/2 md:w-1/3" key={index}>
 						<Project

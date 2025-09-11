@@ -23,7 +23,7 @@ const Project = ({ project, onOpen }: ProjectProps) => {
                 <div className="project-title">{project.title}</div>
                 {/* <div className="project-description">{description}</div> */}
 
-                <img src="../test.png" alt="" className="rounded-3xl" />
+                <img src={project.images[0]} alt="" className="rounded-3xl aspect-3/2 w-full cursor-pointer object-cover" />
             </div>
         </div>
 	);
