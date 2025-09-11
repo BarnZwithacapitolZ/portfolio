@@ -19,9 +19,9 @@ const Projects = () => {
 
 	return (
 		<>
-			<div className="flex flex-wrap items-stretch overflow-hidden">
+			<div className="flex flex-wrap items-stretch">
 				{INFO.projects.map((project: ProjectProps, index: number) => (
-					<div className="overflow-hidden p-4 w-full md:w-1/3" key={index}>
+					<div className="overflow-contain py-4 sm:px-4 w-full sm:w-1/2 lg:w-1/3" key={index}>
 						<Project
 							project={project}
 							onOpen={(project: ProjectProps) => { onOpen(); setProject(project) }}

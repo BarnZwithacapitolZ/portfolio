@@ -15,9 +15,9 @@ type ProjectProps = {
 
 const Project = ({ project, onOpen }: ProjectProps) => {
 	return (
-        <div className="text-start rounded-3xl h-full cursor-pointer hover:bg-(color:--link-color)/50 transition-all ease-in-out duration-[0.3s] shadow-lg shadow-(color:--link-color)/25" onClick={() => onOpen(project)}>		
+        <div className="text-start rounded-3xl h-full cursor-pointer hover:bg-(color:--link-color)/50 transition-all ease-in-out duration-[0.3s]  shadow-[0_2px_10px_rgba(0,0,0,0.1)] shadow-(color:--link-color)/25" onClick={() => onOpen(project)}>		
             <div className="p-4 h-full flex flex-col justify-between">
-                <div className="flex w-full justify-between">
+                <div className="flex w-full justify-between border-b border-[#E6ECF8] pb-4">
                     <div className="size-10 flex items-center justify-center">
                         <img src={project.logo} alt="logo" />
                     </div>

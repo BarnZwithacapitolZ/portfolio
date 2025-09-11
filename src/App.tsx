@@ -49,7 +49,7 @@ const App = () => {
 			<NavBar active={active} />
 
 			<div className="flex flex-col">
-				<Section name="home" className="mt-14 md:mt-[130px] gap-4" onChange={setActive}>
+				<Section name="home" className="mt-20 md:mt-[130px] gap-4" onChange={setActive}>
 					<h1 className="font-bold font-(family-name:--secondary-font) text-5xl">Sam Barnes</h1>
 
 					<span className="font-bold text-xl mb-6">Full Stack Engineer from London, UK</span>
@@ -68,16 +68,18 @@ const App = () => {
 				</Section>
 
 				<Section name="about" classNames={{
-					wrapper: "bg-(color:--link-color) text-white py-30 text-center mb-110",
+					wrapper: "bg-(color:--link-color) text-white py-30 text-center",
 					base: "mb-0"
 				}} onChange={setActive}>
 					<div className="md:w-[60%] flex flex-col gap-6">
-						<h1 className="font-bold font-(family-name:--secondary-font) text-5xl">Hi, I'm Sam!</h1>
+						<h1 className="font-bold font-(family-name:--secondary-font) text-3xl md:text-5xl">Hi, I'm Sam!</h1>
 
 						<span className="text-xl mb-20">{INFO.homepage.description}</span>
 					</div>
+				</Section>
 
-					<div className="flex flex-col md:flex-row text-black absolute top-full bg-white rounded-3xl text-center shadow-[0_5px_5px_0_rgba(233,240,243,0.5),0_0_0_1px_#E6ECF8] w-9/10 md:w-4/5">
+				<Section name="skills" onChange={setActive}>
+					<div className="flex flex-col md:flex-row text-black relative -mt-30 top-full bg-white rounded-3xl text-center shadow-[0_5px_5px_0_rgba(233,240,243,0.5),0_0_0_1px_#E6ECF8] w-full md:w-4/5">
 						<Skill name="frontend" icon={faMobileScreen} border />
 						<Skill name="backend" icon={faCode} border />
 						<Skill name="platform" icon={faCloud} />
@@ -85,7 +87,7 @@ const App = () => {
 				</Section>
 
 				<Section name="projects" onChange={setActive}>
-					<h1 className="font-bold font-(family-name:--secondary-font) text-5xl">My Portfolio</h1>
+					<h1 className="font-bold font-(family-name:--secondary-font) text-3xl md:text-5xl">My Portfolio</h1>
 					<span className="text-xl mb-10">Projects I have worked on in my professional and personal career.</span>
 
 					<Projects />

@@ -37,14 +37,14 @@ const NavBar = ({ active }: NavBarProps) => {
 								<Link to="home" smooth duration={500} offset={-100}>Home</Link>
 							</li>
 							<li className={navItem({ active: currentActive === "about" })}>
-								<Link to="about" smooth duration={500}>About</Link>
+								<Link to="about" smooth duration={500} offset={-100}>About</Link>
 							</li>
 							<li className={navItem({ active: currentActive === "projects" })}>
-								<Link to="projects" smooth duration={500} >Portfolio</Link>
+								<Link to="projects" smooth duration={500} offset={-100}>Portfolio</Link>
 							</li>
 
 							<li className={navItem({active: currentActive === "contact" })}>
-								<Link to="contact" smooth duration={500}>Contact</Link>
+								<Link to="contact" smooth duration={500} offset={-100}>Contact</Link>
 							</li>
 
 							<li>

@@ -22,7 +22,7 @@ const skill = tv({
         icon: "!size-10 bg-(color:--link-color) text-white rounded-full p-4",
         name: "font-bold font-(family-name:--secondary-font) text-2xl",
         description: "mb-4 text-base",
-        list: "flex gap-8 flex-wrap items-center justify-center w-2/3",
+        list: "flex gap-8 flex-wrap items-center justify-center w-full md:w-4/5",
     },
     variants: {
         border: {

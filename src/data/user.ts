@@ -35,9 +35,14 @@ const INFO = {
 
 	projects: [
 		{
-			title: "ODITI",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima. fjdskfjhds sdlkf jsdlk fjksld fkd fjkdslf jsdkl fjsdklf jsdlk fjsdklf jsdkl fjklds j",
+			title: "ODITI E-commerce store",
+			description: `
+ODITI is an E-commerce store built with Shopify to sell premium prints in collaboration with high-profile artists. ODITI was a pivot from the studio.oditi.com platform and a new market for the whole team.
+<br>
+<br>
+I designed and built the entirety of the storefront using my own custom Shopify theme. I also setup a custom shop API which could be used to interact with different print-providers around the world,
+automating the entier process from customer order, to shipping and order fulfillment. I also worked closely alongside co-founder and designer MILLINSKY (Alexandre Daillance) to ensure the site met the premium look and feel requirements.
+`,
 			logo: "https://oditi.com/cdn/shop/files/WhatsApp_Image_2025-04-30_at_14.08.21_659aa17f_f7c00cf7-8394-475a-9207-e08d578f42d1.png?v=1746019671&width=180%20180w",
 			link: "https://oditi.com",
 			skills: ["JavaScript", "GraphQL", "Shopify", "Python", "FastAPI"],
@@ -45,8 +50,19 @@ const INFO = {
 		},
 		{
 			title: "studio.oditi.com (PROSPECT 100)",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+			description: `
+studio.oditi.com (formerly PROSPECT 100) was a co-collaboration design platform I built from scratch with 1 other developer.
+I was responsible and sole developer of the platforms frontend, as well as working on all other aspects of the platform including the Python backend, PostgreSQL database and GCP deployments.
+<br />
+<br />
+The platform was built using ReactJS on the frontend and Flask on the backend. I worked closely alongside the co-founders of ODITI to bring their ideas to life within <strong>very</strong> short turnaround periods,
+often a matter of days for major releases - there was a lot of all-night hackathon sessions! As a founding engineer I was also responsible for resolving any issues that would arise no matter the time, be it 4am or 4pm.
+<br />
+<br />
+I worked on the platform over a period of 2 and a half years, growing it from a simple MVP to over <strong>100,000</strong> users and <strong>millions</strong> of page views. We worked alongside massive brands wuch as Swatch,
+and artists such as Masego and Duran Duran, bringing their design ideas to life through co-collaboration!
+			`,
+				
 			logo: "https://studio.oditi.com/static/media/prospect100icon.29fb2fdd8fd24d5a42e6.png",
 			link: "https://studio.oditi.com",
 			skills: ["JavaScript", "TypeScript", "ReactJS", "PostgreSQL", "Python", "Flask"],
