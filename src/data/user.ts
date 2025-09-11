@@ -1,11 +1,10 @@
-const INFO = {
+const INFO: any = {
 	main: {
 		title: "Reactfolio by truethari",
 		name: "Tharindu N.",
 		email: "mail@tharindu.dev",
 		logo: "/crappy.jpg",
 	},
-
 	socials: {
 		twitter: "https://twitter.com/",
 		github: "https://github.com/",

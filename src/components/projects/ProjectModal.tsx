@@ -1,5 +1,5 @@
 import { Modal, ModalContent, ModalBody, ModalHeader } from "@heroui/modal";
-import { useState } from "react";
+import React, { useState } from "react";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Markdown from "react-markdown"
@@ -22,7 +22,11 @@ type ProjectModalProps = {
     project: ProjectProps
 }
 
-const ListRenderer = ({ children }) => {
+type ListRendererProps = {
+    children: React.ReactNode;
+}
+
+const ListRenderer = ({ children }: ListRendererProps) => {
     return (
         <ul className="list-inside list-disc">{children}</ul>
     )

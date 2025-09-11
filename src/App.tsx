@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { faLink, faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
@@ -114,7 +114,6 @@ const App = () => {
 			</div>
 
 			<Footer />
-
 		</React.Fragment>
 	);
 };
