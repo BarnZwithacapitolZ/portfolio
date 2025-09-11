@@ -1,9 +1,21 @@
+import icon from "../assets/crappy.jpg";
+import oditi from "../assets/oditi.png";
+import oditiCollaborators from "../assets/oditi-collaborators.png"
+import oditiProduct from "../assets/oditi-product.png"
+import oditiAR from "../assets/oditi-ar.png";
+import studioOditi from "../assets/studio.oditi.com.png";
+import rotaboard from "../assets/rotaboard.png"
+import rotaboardRating from "../assets/rotaboard-rating.png"
+import rotaboardEmployees from "../assets/rotaboard-employees.png"
+import rotaboardDash from "../assets/rotaboard-dash.png"
+import { css, html, js, ts, react, node, php, laravel, python, flask, graphql, wordpress, shopify, vscode } from "./icons";
+
 const INFO: any = {
 	main: {
 		title: "Reactfolio by truethari",
 		name: "Tharindu N.",
 		email: "mail@tharindu.dev",
-		logo: "/crappy.jpg",
+		logo: icon,
 	},
 	socials: {
 		twitter: "https://twitter.com/",
@@ -45,7 +57,7 @@ automating the entier process from customer order, to shipping and order fulfill
 			logo: "https://oditi.com/cdn/shop/files/WhatsApp_Image_2025-04-30_at_14.08.21_659aa17f_f7c00cf7-8394-475a-9207-e08d578f42d1.png?v=1746019671&width=180%20180w",
 			link: "https://oditi.com",
 			skills: ["JavaScript", "GraphQL", "Shopify", "Python", "FastAPI"],
-			images: ["/oditi.png", "/oditi-collaborators.png", "/oditi-product.png", "/oditi-ar.png"]
+			images: [oditi, oditiCollaborators, oditiProduct, oditiAR]
 		},
 		{
 			title: "studio.oditi.com (PROSPECT 100)",
@@ -65,7 +77,7 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 			logo: "https://studio.oditi.com/static/media/prospect100icon.29fb2fdd8fd24d5a42e6.png",
 			link: "https://studio.oditi.com",
 			skills: ["JavaScript", "TypeScript", "ReactJS", "PostgreSQL", "Python", "Flask"],
-			images: ["/studio.oditi.com.png", "/test.png", "/test.png"]
+			images: [studioOditi, "/test.png", "/test.png"]
 
 		},
 		{
@@ -75,7 +87,7 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			link: "https://rotaboard.co.uk",
 			skills: ["PHP", "laravel", "MySQL", "JavaScript", "ReactJS", "Python"],
-			images: ["/rotaboard.png", "/rotaboard-rating.png", "/rotaboard-employees.png", "/rotaboard-dash.png"]
+			images: [rotaboard, rotaboardRating, rotaboardEmployees, rotaboardDash]
 
 		},
 		// {
@@ -106,23 +118,23 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 			list: [
 				{
 					name: "CSS",
-					icon: "/css.svg"
+					icon: css
 				},
 				{
 					name: "HTML",
-					icon: "/html.svg"
+					icon: html
 				},
 				{
 					name: "JavaScript",
-					icon: "/js.svg"
+					icon: js
 				},
 				{
 					name: "TypeScript",
-					icon: "/ts.svg"
+					icon: ts
 				},
 				{
 					name: "ReactJS",
-					icon: "/react.svg"
+					icon: react
 				},
 			]
 		},
@@ -132,27 +144,27 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 			list: [
 				{
 					name: "NodeJS",
-					icon: "/node.svg"
+					icon: node
 				},
 				{
 					name: "PHP",
-					icon: "/php.svg"
+					icon: php
 				},
 				{
 					name: "Laravel",
-					icon: "/laravel.svg"
+					icon: laravel
 				},
 				{
 					name: "Python",
-					icon: "/python.svg"
+					icon: python
 				},
 				{
 					name: "Flask",
-					icon: "/flask.svg"
+					icon: flask
 				},
 				{
 					name: "GraphQL",
-					icon: "/graphql.svg"
+					icon: graphql
 				}
 			]	
 		},
@@ -162,16 +174,16 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 			list: [
 				{
 					name: "WordPress",
-					icon: "/wordpress.svg"
+					icon: wordpress
 				},
 				{
 					name: "Shopify",
-					icon: "/shopify.svg"
+					icon: shopify
 				},
 				
 				{
 					name: "VS Code",
-					icon: "/visualstudio.svg"
+					icon: vscode
 				},
 			]
 		}

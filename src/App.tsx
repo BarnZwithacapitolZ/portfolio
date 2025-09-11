@@ -78,7 +78,7 @@ const App = () => {
 					</div>
 				</Section>
 
-				<Section name="skills" onChange={setActive}>
+				<Section name="skills" onChange={setActive} className="mb-30">
 					<div className="flex flex-col md:flex-row text-black relative -mt-30 top-full bg-white rounded-3xl text-center shadow-[0_5px_5px_0_rgba(233,240,243,0.5),0_0_0_1px_#E6ECF8] w-full md:w-4/5">
 						<Skill name="frontend" icon={faMobileScreen} border />
 						<Skill name="backend" icon={faCode} border />
