@@ -37,10 +37,10 @@ const INFO: any = {
 I'm a fullstack engineer based in London. I love creative challanges and taking ideas from the notepad to the ipad (online), turning ideas into scalable, user-friendly applications.
 <br>
 <br>
-I specialise in building projects in <strong>React</strong> and <strong>Python</strong> but also have considerable experience in other languages such as PHP with frameworks like Larave. I enjoy working in a fast, agile way, balancing clean, maintainable code with rapid delivery. Whether it's architecting the backend or database, crafting intuitive frontends, or deploying full solutions, I enjoy taking ownership across the entire development cycle.
+I specialise in building projects in <strong>React</strong> and <strong>Python</strong> but also have considerable experience in other languages such as PHP with frameworks like Laravel. I enjoy working in a fast, agile way, balancing clean, maintainable code with rapid delivery. Whether it's architecting the backend or database, crafting intuitive frontends, or deploying full solutions, I enjoy taking ownership across the entire development cycle.
 <br>
 <br>
-Feel free to take a moment to browse my portfolio and see what i'm about. I'f your interested in working together or just want to talk, feel free to reach out!
+Feel free to take a moment to browse my portfolio and see what i'm about. If you're interested in working together or just want to talk, feel free to reach out!
 		`,
 	},
 
