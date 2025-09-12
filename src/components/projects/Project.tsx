@@ -6,6 +6,7 @@ type Project = {
     title: string;
     images: string[];
     link: string;
+    skills: string[];
 }
 
 type ProjectProps = {

@@ -11,6 +11,7 @@ type ProjectProps = {
 	images: string[];
     description: string;
 	link: string;
+	skills: string[];
 }
 
 const Projects = () => {
