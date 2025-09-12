@@ -1,20 +1,8 @@
-import icon from "../assets/crappy.jpg";
-import oditi from "../assets/portfolio/oditi.png";
-import oditiCollaborators from "../assets/portfolio/oditi-collaborators.png"
-import oditiProduct from "../assets/portfolio/oditi-product.png"
-import oditiAR from "../assets/portfolio/oditi-ar.png";
-import studioOditi from "../assets/portfolio/studio.oditi.com.png";
-import studioOditiBrief from "../assets/portfolio/studio.oditi.com-brief.png";
-import studioOditiDash from "../assets/portfolio/studio.oditi.com-dash.png";
-import studioOditiForm from "../assets/portfolio/studio.oditi.com-form.png";
-import studioOditiLeaderboard from "../assets/portfolio/studio.oditi.com-leaderboard.png";
-import studioOditiProfile from "../assets/portfolio/studio.oditi.com-profile.png";
-import studioOditiSubmission from "../assets/portfolio/studio.oditi.com-submission.png";
-import rotaboard from "../assets/portfolio/rotaboard.png"
-import rotaboardRating from "../assets/portfolio/rotaboard-rating.png"
-import rotaboardEmployees from "../assets/portfolio/rotaboard-employees.png"
-import rotaboardDash from "../assets/portfolio/rotaboard-dash.png"
+import { icon, oditi, oditiCollaborators, oditiProduct, oditiAR, studioOditi, studioOditiBrief, studioOditiDash, studioOditiForm,
+	studioOditiLeaderboard, studioOditiProfile, studioOditiSubmission, rotaboard, rotaboardRating,
+	rotaboardEmployees, rotaboardDash, transportHome, transportLevels, transportLevel, transportEditor, transportGraphics } from "./images";
 import { css, html, js, ts, react, node, php, laravel, python, flask, graphql, wordpress, shopify, vscode } from "./icons";
+import transportIcon from "../assets/transportIcon.png";
 
 const INFO: any = {
 	main: {
@@ -43,13 +31,6 @@ I specialise in building projects in <strong>React</strong> and <strong>Python</
 Feel free to take a moment to browse my portfolio and see what i'm about. If you're interested in working together or just want to talk, feel free to reach out!
 		`,
 	},
-
-	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
-	},
-
 	articles: {
 		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
 		description:
@@ -94,8 +75,16 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 		},
 		{
 			title: "Rotaboard",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+			description: `
+Rotaboard was built to allow small companies, especially ones hiring zero-hour-contracters to schedule employee shifts effortlessly. The application uses custom matching algorithms to learn an employees favourite shift patterns based on feedback allowing, over time, the ideal shifts to be matched to each employee.
+<br>
+<br>
+The idea to develop Rotaboard came about whilst I was working at a corner shop where they used paper rotas which were manually created every week, often matching undesirable shifts to employees.
+Speaking to others, this seemed to be a common problem with zero-hour-contract style jobs. Eventually, I was given the chance to create Rotaboard as a dissertation project at University, and the project evolved from there.
+<br>
+<br>
+The application was built using a PHP backend with Laravel and a ReactJS frontend. This was my first time using React for a large-scale project and a lot was learnt on how to properly structure and write maintainable, scaleable code.
+			`,
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			link: "https://rotaboard.co.uk",
 			skills: ["PHP", "laravel", "MySQL", "JavaScript", "ReactJS", "Python"],
@@ -114,12 +103,18 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 		// },
 		{
 			title: "Transport The Public",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			link: "https://github.com",
+			description: `
+Transport The Public is a short game I made in Python (interesting choice for game development I know).
+The game combines my love for public transport with my love for gaming, where the aim of the game is to transport people from one destination to another using different forms of Public Transport.
+The game includes multiple countries, each with their own levels meant to represent the tansit systems of different cities in each respective country. There was a progression system to unlock levels with keys, earned by their ranking after completing a level, as well as a custom map builder.
+<br>
+<br>
+This was my first large-scale Python project and one of the first times putting OOP principles into practice; there was definitely a lot of lessions learnt, such as properly structuring code into modules for ease of scaleability, as well as not getting bogged-down by feature-creep.
+			`,
+			logo: transportIcon,
+			link: "https://github.com/BarnZwithacapitolZ/Travel-Game",
 			skills: ["Python"],
-			images: ["/test.png", "/test.png", "/test.png"]
+			images: [transportHome, transportLevel, transportLevels, transportEditor, transportGraphics]
 
 		},
 	],

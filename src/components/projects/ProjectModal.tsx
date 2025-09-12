@@ -14,6 +14,7 @@ type ProjectProps = {
     description: string,
     link: string,
     images: string[],
+    skills: string[],
 }
 
 type ProjectModalProps = {
@@ -79,20 +80,24 @@ const ProjectModal = ({ isOpen, onOpenChange, project }: ProjectModalProps) => {
                         ))}
                     </div>
 
-                    <div className="w-full md:w-6/8 overflow-y-scroll">
+                    <div className="w-full md:w-6/8 overflow-y-scroll flex flex-col gap-6">
                         <div className="sm:w-1/2 mx-auto flex justify-center">
                             <Zoom>
                                 <img src={selectedImage || project.images[0]} className="max-h-[200px] aspect-3/2 object-cover rounded-lg" />
                             </Zoom>
                         </div>
 
-                        <div className="mt-6">
-                            <ReactMarkdown
-                              rehypePlugins={[rehypeRaw]}
-                              components={{ ul: ListRenderer }}
-                            >
-                                {project.description}
-                            </ReactMarkdown>
+                        <ReactMarkdown
+                            rehypePlugins={[rehypeRaw]}
+                            components={{ ul: ListRenderer }}
+                        >
+                            {project.description}
+                        </ReactMarkdown>
+
+                        <div className="flex flex-wrap gap-2">
+                            {project.skills.map(skill => (
+                                <div className="bg-(color:--link-color) rounded-2xl text-white px-2 py-1 ">{skill}</div>
+                            ))}
                         </div>
                     </div>
                 </ModalBody>
