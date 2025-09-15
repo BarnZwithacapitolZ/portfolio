@@ -3,6 +3,7 @@ import { icon, oditi, oditiCollaborators, oditiProduct, oditiAR, studioOditi, st
 	rotaboardEmployees, rotaboardDash, transportHome, transportLevels, transportLevel, transportEditor, transportGraphics } from "./images";
 import { css, html, js, ts, react, node, php, laravel, python, flask, graphql, wordpress, shopify, vscode } from "./icons";
 import transportIcon from "../assets/transportIcon.png";
+import rotaboardIcon from "../assets/rotaboard.png";
 
 const INFO: any = {
 	main: {
@@ -22,7 +23,7 @@ const INFO: any = {
 	homepage: {
 		title: "Hi, I'm Sam!",
 		description: `
-I'm a fullstack engineer based in London. I love creative challanges and taking ideas from the notepad to the ipad (online), turning ideas into scalable, user-friendly applications.
+I'm a fullstack engineer based in London. I love creative challanges and taking ideas from the notepad to the ipad, turning ideas into scalable, user-friendly applications.
 <br>
 <br>
 I specialise in building projects in <strong>React</strong> and <strong>Python</strong> but also have considerable experience in other languages such as PHP with frameworks like Laravel. I enjoy working in a fast, agile way, balancing clean, maintainable code with rapid delivery. Whether it's architecting the backend or database, crafting intuitive frontends, or deploying full solutions, I enjoy taking ownership across the entire development cycle.
@@ -85,7 +86,7 @@ Speaking to others, this seemed to be a common problem with zero-hour-contract s
 <br>
 The application was built using a PHP backend with Laravel and a ReactJS frontend. This was my first time using React for a large-scale project and a lot was learnt on how to properly structure and write maintainable, scaleable code.
 			`,
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			logo: rotaboardIcon,
 			link: "https://rotaboard.co.uk",
 			skills: ["PHP", "laravel", "MySQL", "JavaScript", "ReactJS", "Python"],
 			images: [rotaboard, rotaboardRating, rotaboardEmployees, rotaboardDash]
