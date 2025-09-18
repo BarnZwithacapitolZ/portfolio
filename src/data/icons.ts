@@ -12,6 +12,8 @@ import graphql from "../assets/icons/graphql.svg";
 import wordpress from "../assets/icons/wordpress.svg";
 import shopify from "../assets/icons/shopify.svg";
 import vscode from "../assets/icons/visualstudio.svg";
+import gcp from "../assets/icons/gcp.svg";
+import tailwind from "../assets/icons/tailwind.svg";
 
 export {
     css,
@@ -27,5 +29,7 @@ export {
     graphql,
     wordpress,
     shopify,
-    vscode
+    vscode,
+    gcp,
+    tailwind
 };

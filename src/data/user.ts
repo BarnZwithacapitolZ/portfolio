@@ -1,7 +1,7 @@
 import { icon, oditi, oditiCollaborators, oditiProduct, oditiAR, studioOditi, studioOditiBrief, studioOditiDash, studioOditiForm,
 	studioOditiLeaderboard, studioOditiProfile, studioOditiSubmission, rotaboard, rotaboardRating,
 	rotaboardEmployees, rotaboardDash, transportHome, transportLevels, transportLevel, transportEditor, transportGraphics } from "./images";
-import { css, html, js, ts, react, node, php, laravel, python, flask, graphql, wordpress, shopify, vscode } from "./icons";
+import { css, html, js, ts, react, node, php, laravel, python, flask, graphql, wordpress, shopify, vscode, gcp, tailwind } from "./icons";
 import transportIcon from "../assets/transportIcon.png";
 import rotaboardIcon from "../assets/rotaboard.png";
 
@@ -144,6 +144,10 @@ This was my first large-scale Python project and one of the first times putting 
 					name: "ReactJS",
 					icon: react
 				},
+				{
+					name: "Tailwind",
+					icon: tailwind
+				}
 			]
 		},
 		backend: {
@@ -193,6 +197,10 @@ This was my first large-scale Python project and one of the first times putting 
 					name: "VS Code",
 					icon: vscode
 				},
+				{
+					name: "Google Cloud Platform",
+					icon: gcp
+				}
 			]
 		}
 	}
