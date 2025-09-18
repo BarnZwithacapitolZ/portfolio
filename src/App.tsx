@@ -42,10 +42,9 @@ const App = () => {
 		<React.Fragment>
 			<Helmet>
 				<title>{INFO.main.title}</title>
-				<meta name="description" content={"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies."} />
 				<meta
 					name="keywords"
-					content={["Tharindu", "Tharindu N", "Tharindu Nayanajith"].join(", ")}
+					content={["Sam", "Sam B", "Sam Barnes"].join(", ")}
 				/>
 			</Helmet>
 
