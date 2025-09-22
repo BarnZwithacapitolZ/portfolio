@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-scroll";
 import { tv } from "tailwind-variants";
-import { faMoon, faS, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ThemeContext from "../theme/ThemeContext";
 
