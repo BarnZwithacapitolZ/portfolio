@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { tv } from "tailwind-variants";
 import INFO from "../data/user";
+import { twJoin } from "tailwind-merge";
 
 type SkillProps = {
     name: string;
@@ -13,6 +14,7 @@ type SkillInfo = {
     description: string;
     list: {
         icon: string;
+        name: string;
     }[];
 }
 
@@ -47,7 +49,7 @@ const Skill = ({ name, icon, border = false }: SkillProps) => {
 
             <div className={list()}>
                 {skillInfo.list.map((skill, index: number) => (
-                    <img src={skill.icon} key={index} className="w-12 h-12" />
+                    <img src={skill.icon} key={index} className={twJoin("w-12 h-12", skill.name === "Flask" && "dark:filter-[invert(1)]")} />
                 ))}
             </div>
         </div>
