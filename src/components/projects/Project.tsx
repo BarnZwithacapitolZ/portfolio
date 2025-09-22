@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import ThemeContext from "../../theme/ThemeContext";
 
 type Project = {
     logo: string;
+    logoInvert: string;
     title: string;
     images: string[];
     link: string;
@@ -15,17 +18,19 @@ type ProjectProps = {
 }
 
 const Project = ({ project, onOpen }: ProjectProps) => {
+    const { theme } = useContext(ThemeContext);
+
 	return (
-        <div className="text-start rounded-3xl h-full cursor-pointer hover:bg-(color:--link-color)/50 transition-all ease-in-out duration-[0.3s]  shadow-[0_2px_10px_rgba(0,0,0,0.1)] shadow-(color:--link-color)/25" onClick={() => onOpen(project)}>		
+        <div className="text-start rounded-3xl h-full cursor-pointer bg-(color:--content-color) hover:bg-(color:--primary-color)/50 transition-all ease-in-out duration-[0.3s]  shadow-[0_2px_10px_rgba(0,0,0,0.1)] shadow-(color:--primary-color)/25 dark:shadow-none dark:border dark:border-[#27272a]" onClick={() => onOpen(project)}>		
             <div className="p-4 h-full flex flex-col justify-between">
                 <div className="flex w-full justify-between border-b border-[#E6ECF8] pb-4">
                     <div className="size-10 flex items-center justify-center">
-                        <img src={project.logo} alt="logo" />
+                        <img src={theme === "light" ? project.logo : project.logoInvert} alt="logo" />
                     </div>
 
                     <div className="">
                         <a 
-                            className="bg-(color:--link-color) rounded-full p-2 text-white aspect-square flex"
+                            className="bg-(color:--primary-color) rounded-full p-2 text-white aspect-square flex"
                             href={project.link}
                             target="_blank"
                             rel="noreferrer"

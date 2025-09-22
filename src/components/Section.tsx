@@ -28,7 +28,7 @@ const Section = ({ name = "", className = "", classNames = {}, onChange, childre
             onChange={(inView: boolean) => onChange((prev) => ({ ...prev, [name]: inView}))}
             threshold={0.2}
             data-slot="wrapper"
-            className={classNames.wrapper}
+            className={twMerge("bg-(color:--tertiary-color) text-(color:--secondary-color)", classNames.wrapper)}
         >
             <Element 
                 name={name}

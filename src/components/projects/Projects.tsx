@@ -7,6 +7,7 @@ import INFO from "../../data/user";
 
 type ProjectProps = {
     logo: string;
+	logoInvert: string;
     title: string;
 	images: string[];
     description: string;

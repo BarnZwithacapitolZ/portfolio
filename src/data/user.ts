@@ -4,6 +4,8 @@ import { icon, oditi, oditiCollaborators, oditiProduct, oditiAR, studioOditi, st
 import { css, html, js, ts, react, node, php, laravel, python, flask, graphql, wordpress, shopify, vscode, gcp, tailwind } from "./icons";
 import transportIcon from "../assets/transportIcon.png";
 import rotaboardIcon from "../assets/rotaboard.png";
+import oditiBlackIcon from "../assets/oditi-black.png";
+import oditiWhiteIcon from "../assets/oditi-white.png";
 
 const INFO: any = {
 	main: {
@@ -48,7 +50,8 @@ ODITI is an E-commerce store built with Shopify to sell premium prints in collab
 I designed and built the entirety of the storefront using my own custom Shopify theme. I also setup a custom shop API which could be used to interact with different print-providers around the world,
 automating the entier process from customer order, to shipping and order fulfillment. I also worked closely alongside co-founder and designer MILLINSKY (Alexandre Daillance) to ensure the site met the premium look and feel requirements.
 `,
-			logo: "https://oditi.com/cdn/shop/files/WhatsApp_Image_2025-04-30_at_14.08.21_659aa17f_f7c00cf7-8394-475a-9207-e08d578f42d1.png?v=1746019671&width=180%20180w",
+			logo: oditiBlackIcon,
+			logoInvert: oditiWhiteIcon,
 			link: "https://oditi.com",
 			skills: ["JavaScript", "GraphQL", "Shopify", "Python", "FastAPI"],
 			images: [oditi, oditiCollaborators, oditiProduct, oditiAR]
@@ -69,6 +72,7 @@ and artists such as Masego and Duran Duran, bringing their design ideas to life 
 			`,
 				
 			logo: "https://studio.oditi.com/static/media/prospect100icon.29fb2fdd8fd24d5a42e6.png",
+			logoInvert: "https://studio.oditi.com/static/media/prospect100icon-inverted.d3e548d4a9c82a407278972ffe4d4f39.svg",
 			link: "https://studio.oditi.com",
 			skills: ["JavaScript", "TypeScript", "ReactJS", "PostgreSQL", "Python", "Flask"],
 			images: [studioOditi, studioOditiSubmission, studioOditiBrief, studioOditiDash, studioOditiForm, studioOditiProfile, studioOditiLeaderboard]
@@ -87,6 +91,7 @@ Speaking to others, this seemed to be a common problem with zero-hour-contract s
 The application was built using a PHP backend with Laravel and a ReactJS frontend. This was my first time using React for a large-scale project and a lot was learnt on how to properly structure and write maintainable, scaleable code.
 			`,
 			logo: rotaboardIcon,
+			logoInvert: rotaboardIcon,
 			link: "https://rotaboard.co.uk",
 			skills: ["PHP", "laravel", "MySQL", "JavaScript", "ReactJS", "Python"],
 			images: [rotaboard, rotaboardRating, rotaboardEmployees, rotaboardDash]
@@ -113,6 +118,7 @@ The game includes multiple countries, each with their own levels meant to repres
 This was my first large-scale Python project and one of the first times putting OOP principles into practice; there was definitely a lot of lessions learnt, such as properly structuring code into modules for ease of scaleability, as well as not getting bogged-down by feature-creep.
 			`,
 			logo: transportIcon,
+			logoInvert: transportIcon,
 			link: "https://github.com/BarnZwithacapitolZ/Travel-Game",
 			skills: ["Python"],
 			images: [transportHome, transportLevel, transportLevels, transportEditor, transportGraphics]

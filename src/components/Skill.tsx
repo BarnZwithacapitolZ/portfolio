@@ -19,7 +19,7 @@ type SkillInfo = {
 const skill = tv({
     slots: {
         base: "w-full md:w-1/3 flex flex-col items-center py-10 px-4 gap-6",
-        icon: "!size-10 bg-(color:--link-color) text-white rounded-full p-4",
+        icon: "!size-10 bg-(color:--primary-color) text-white rounded-full p-4",
         name: "font-bold font-(family-name:--secondary-font) text-2xl",
         description: "mb-4 text-base",
         list: "flex gap-8 flex-wrap items-center justify-center w-full md:w-4/5",
@@ -27,7 +27,7 @@ const skill = tv({
     variants: {
         border: {
             true: {
-                base: "border-b md:border-b-0 md:border-r border-[#E6ECF8]"
+                base: "border-b md:border-b-0 md:border-r border-[#E6ECF8] dark:border-[#27272a]"
             }
         }
     }

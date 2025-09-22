@@ -51,13 +51,13 @@ const ProjectModal = ({ isOpen, onOpenChange, project }: ProjectModalProps) => {
             placement="center"
             scrollBehavior="inside"
         >
-            <ModalContent className="p-4 h-9/10 max-h-auto md:h-4/5 max-w-6xl ">
+            <ModalContent className="p-4 h-9/10 max-h-auto md:h-4/5 max-w-6xl bg-(color:--content-color) text-(color:--secondary-color)">
                 <ModalHeader className="pb-2 w-full justify-between gap-6">
-                    <div className="ext-3xl font-bold font-(family-name:--secondary-font) after:content-[''] after:block after:w-14 after:h-2 after:bg-(color:--link-color) after:rounded after:my-1">{project.title}</div>
+                    <div className="ext-3xl font-bold font-(family-name:--secondary-font) after:content-[''] after:block after:w-14 after:h-2 after:bg-(color:--primary-color) after:rounded after:my-1">{project.title}</div>
 
                     <div>
                         <a 
-                            className="border-2 border-(color:--link-color) text-(color:--link-color) rounded-4xl px-4 py-1 inline-block font-bold text-sm md:text-base text-nowrap"
+                            className="border-2 border-(color:--primary-color) text-(color:--primary-color) rounded-4xl px-4 py-1 inline-block font-bold text-sm md:text-base text-nowrap dark:bg-(color:--primary-color) dark:text-white"
                             target="_blank"
     						rel="noreferrer"
                             href={project.link}
@@ -96,7 +96,7 @@ const ProjectModal = ({ isOpen, onOpenChange, project }: ProjectModalProps) => {
 
                         <div className="flex flex-wrap gap-2">
                             {project.skills.map(skill => (
-                                <div className="bg-(color:--link-color) rounded-2xl text-white px-2 py-1 ">{skill}</div>
+                                <div className="bg-(color:--primary-color) rounded-2xl text-white px-2 py-1 ">{skill}</div>
                             ))}
                         </div>
                     </div>

@@ -62,7 +62,7 @@ const App = () => {
 						href={INFO.socials.linkedin}
 						target="_blank"
 						rel="noreferrer"
-						className="border-2 border-(color:--link-color) text-(color:--link-color) rounded-4xl px-6 py-2 inline-block font-bold text-lg"
+						className="border-2 border-(color:--primary-color) text-(color:--primary-color) dark:bg-(color:--primary-color) dark:text-white rounded-4xl px-6 py-2 inline-block font-bold text-lg"
 					>
 						<FontAwesomeIcon icon={faLinkedin} className="mr-2" />
 						Connect
@@ -70,7 +70,7 @@ const App = () => {
 				</Section>
 
 				<Section name="about" classNames={{
-					wrapper: "bg-(color:--link-color) text-white py-30 text-center",
+					wrapper: "bg-(color:--primary-color) text-white py-30 text-center",
 					base: "!mb-0"
 				}} onChange={setActive}>
 					<div className="md:w-[60%] flex flex-col gap-6">
@@ -87,7 +87,7 @@ const App = () => {
 				</Section>
 
 				<Section name="skills" onChange={setActive} className="mb-30">
-					<div className="flex flex-col md:flex-row text-black relative -mt-30 top-full bg-white rounded-3xl text-center shadow-[0_5px_5px_0_rgba(233,240,243,0.5),0_0_0_1px_#E6ECF8] w-full md:w-4/5">
+					<div className="flex flex-col md:flex-row bg-(color:--content-color) text-(color:--secondary-color) relative -mt-30 top-full rounded-3xl text-center shadow-[0_5px_5px_0_rgba(233,240,243,0.5),0_0_0_1px_#E6ECF8] dark:shadow-none dark:border dark:border-[#27272a] w-full md:w-4/5">
 						<Skill name="frontend" icon={faMobileScreen} border />
 						<Skill name="backend" icon={faCode} border />
 						<Skill name="platform" icon={faCloud} />
@@ -102,30 +102,30 @@ const App = () => {
 
 
 				<Section name="contact" classNames={{
-					wrapper: "bg-(color:--link-color) text-white pt-30 pb-10 text-center mb-0",
+					wrapper: "bg-(color:--primary-color) text-white pt-30 pb-10 text-center mb-0",
 					base: "!mb-0 gap-10"
 				}} onChange={setActive}>
 					<h1 className="font-bold font-(family-name:--secondary-font) text-5xl">Contact Me</h1>
 
 					<div className="flex gap-4">
 						<a href={INFO.socials.github} target="_blank" rel="noreferrer">
-							<FontAwesomeIcon icon={faGithub} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+							<FontAwesomeIcon icon={faGithub} className="!size-6 border-2 border-[#33e9d5] dark:border-[#14b8a6] p-3 rounded-full" />
 						</a>
 
 						<a href={INFO.socials.gitlab} target="_blank" rel="noreferrer">
-							<FontAwesomeIcon icon={faGitlab} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+							<FontAwesomeIcon icon={faGitlab} className="!size-6 border-2 border-[#33e9d5] dark:border-[#14b8a6] p-3 rounded-full" />
 						</a>
 
 						<a href={INFO.socials.instagram} target="_blank" rel="noreferrer">
-							<FontAwesomeIcon icon={faInstagram} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+							<FontAwesomeIcon icon={faInstagram} className="!size-6 border-2 border-[#33e9d5] dark:border-[#14b8a6] p-3 rounded-full" />
 						</a>
 						
 						<a href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
-							<FontAwesomeIcon icon={faLinkedin} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+							<FontAwesomeIcon icon={faLinkedin} className="!size-6 border-2 border-[#33e9d5] dark:border-[#14b8a6] p-3 rounded-full" />
 						</a>
 
 						<a href={INFO.socials.email} target="_blank" rel="noreferrer">
-							<FontAwesomeIcon icon={faMailBulk} className="!size-6 border-2 border-[#33e9d5] p-3 rounded-full" />
+							<FontAwesomeIcon icon={faMailBulk} className="!size-6 border-2 border-[#33e9d5] dark:border-[#14b8a6] p-3 rounded-full" />
 						</a>
 					</div>
 

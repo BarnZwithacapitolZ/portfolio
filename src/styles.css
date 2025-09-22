@@ -1,14 +1,20 @@
 :root {
 	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
+	--primary-color: #14b8a6;
+	--secondary-color: #000;
+	--tertiary-color: #fff;
+	--content-color: #fff;
 	/* ---------------------- */
 
 	/* ------- fonts ------- */
 	--primary-font: "Heebo", sans-serif;
 	--secondary-font: "Roboto", sans-serif;
 	/* --------------------- */
+}
+
+.dark {
+	--primary-color: #0f766b;
+	--secondary-color: #fff;
+	--tertiary-color: #0e0e11;
+	--content-color: #18181b;
 }
